@@ -1,0 +1,156 @@
+investigation:
+	travel_variant: Direct
+	experiments:
+	- experiment:
+		number: 1
+		input data:
+			buffer size: "192 kB"
+		results:
+			duration: "118 ms"
+	- experiment:
+		number: 2
+		input data:
+			buffer size: "256 kB"
+		results:
+			duration: "138 ms"
+	- experiment:
+		number: 3
+		input data:
+			buffer size: "512 kB"
+		results:
+			duration: "267 ms"
+	- experiment:
+		number: 4
+		input data:
+			buffer size: "1024 kB"
+		results:
+			duration: "520 ms"
+	- experiment:
+		number: 5
+		input data:
+			buffer size: "2048 kB"
+		results:
+			duration: "1003 ms"
+	- experiment:
+		number: 6
+		input data:
+			buffer size: "4096 kB"
+		results:
+			duration: "2021 ms"
+	- experiment:
+		number: 7
+		input data:
+			buffer size: "8192 kB"
+		results:
+			duration: "4136 ms"
+	- experiment:
+		number: 8
+		input data:
+			buffer size: "13824 kB"
+		results:
+			duration: "7508 ms"
+
+investigation:
+	travel_variant: Reverse
+	experiments:
+	- experiment:
+		number: 1
+		input data:
+			buffer size: "192 kB"
+		results:
+			duration: "103 ms"
+	- experiment:
+		number: 2
+		input data:
+			buffer size: "256 kB"
+		results:
+			duration: "151 ms"
+	- experiment:
+		number: 3
+		input data:
+			buffer size: "512 kB"
+		results:
+			duration: "256 ms"
+	- experiment:
+		number: 4
+		input data:
+			buffer size: "1024 kB"
+		results:
+			duration: "501 ms"
+	- experiment:
+		number: 5
+		input data:
+			buffer size: "2048 kB"
+		results:
+			duration: "1000 ms"
+	- experiment:
+		number: 6
+		input data:
+			buffer size: "4096 kB"
+		results:
+			duration: "2034 ms"
+	- experiment:
+		number: 7
+		input data:
+			buffer size: "8192 kB"
+		results:
+			duration: "4053 ms"
+	- experiment:
+		number: 8
+		input data:
+			buffer size: "13824 kB"
+		results:
+			duration: "7112 ms"
+
+investigation:
+	travel_variant: Random
+	experiments:
+	- experiment:
+		number: 1
+		input data:
+			buffer size: "192 kB"
+		results:
+			duration: "101 ms"
+	- experiment:
+		number: 2
+		input data:
+			buffer size: "256 kB"
+		results:
+			duration: "136 ms"
+	- experiment:
+		number: 3
+		input data:
+			buffer size: "512 kB"
+		results:
+			duration: "273 ms"
+	- experiment:
+		number: 4
+		input data:
+			buffer size: "1024 kB"
+		results:
+			duration: "501 ms"
+	- experiment:
+		number: 5
+		input data:
+			buffer size: "2048 kB"
+		results:
+			duration: "1003 ms"
+	- experiment:
+		number: 6
+		input data:
+			buffer size: "4096 kB"
+		results:
+			duration: "2023 ms"
+	- experiment:
+		number: 7
+		input data:
+			buffer size: "8192 kB"
+		results:
+			duration: "4055 ms"
+	- experiment:
+		number: 8
+		input data:
+			buffer size: "13824 kB"
+		results:
+			duration: "7694 ms"
+
