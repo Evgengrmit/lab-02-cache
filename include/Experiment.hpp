@@ -23,8 +23,8 @@ class Experiment {
   static int experimentsCounter;
   explicit Experiment(const size_t &numbersOfElements);
   void start();
-  size_t getCardinality() const;
-  const ExperimentsTimes &getTime() const;
+  [[nodiscard]] size_t getCardinality() const;
+  [[nodiscard]] const ExperimentsTimes &getTime() const;
   ~Experiment();
 
  private:
