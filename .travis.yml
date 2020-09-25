@@ -5,6 +5,13 @@ language:
 services:
   - docker
 
+jobs:
+  include:
+    - name: "all projects"
+      script:
+        - cmake -H. -B_build
+        - cmake --build _build
+
 notifications:
   email: false
 
