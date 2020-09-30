@@ -38,6 +38,7 @@ add_executable(tests
         # TODO: enum your files and delete this comment
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/Experiment.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/Investigation.cpp
+        #${CMAKE_CURRENT_SOURCE_DIR}/sources/lab2.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
         )
 
