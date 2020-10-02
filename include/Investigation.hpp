@@ -9,12 +9,16 @@
 #include <vector>
 
 
-const size_t BYTES_IN_KILOBYTES = 1024;
+const size_t bytesInKilobytes = 1024;
 // Intel Core i7-9750H
 // in bytes
-const size_t L1 = 384 * BYTES_IN_KILOBYTES;
-const size_t L2 = 1536 * BYTES_IN_KILOBYTES;
-const size_t L3 = 9216 * BYTES_IN_KILOBYTES;
+struct SizeOfCaches{
+ public:
+  const size_t l1 = 384 * bytesInKilobytes;
+  const size_t l2 = 1536 * bytesInKilobytes;
+  const size_t l3 = 9216 * bytesInKilobytes;
+};
+
 struct BufferSize {
   double minSize;
   double currentSize;

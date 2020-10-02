@@ -40,7 +40,7 @@ void Experiment::warmingUpCache() {
 void Experiment::directBypass() {
   warmingUpCache();
   auto start = std::chrono::high_resolution_clock::now();
-  for (size_t i = 0; i < CYCLES; ++i) {
+  for (size_t i = 0; i < cycles; ++i) {
     for (const size_t &j : indexesForBuffer) {
       doSomething(buffer[j]);
     }
@@ -57,7 +57,7 @@ void Experiment::reverseBypass() {
   warmingUpCache();
   std::reverse(indexesForBuffer.begin(), indexesForBuffer.end());
   auto start = std::chrono::high_resolution_clock::now();
-  for (size_t i = 0; i < CYCLES; ++i) {
+  for (size_t i = 0; i < cycles; ++i) {
     for (const size_t &j : indexesForBuffer) {
       doSomething(buffer[j]);
     }
@@ -75,7 +75,7 @@ void Experiment::randomBypass() {
   warmingUpCache();
   std::shuffle(indexesForBuffer.begin(), indexesForBuffer.end(), g);
   auto start = std::chrono::high_resolution_clock::now();
-  for (size_t i = 0; i < CYCLES; ++i) {
+  for (size_t i = 0; i < cycles; ++i) {
     for (const size_t &j : indexesForBuffer) {
       doSomething(buffer[j]);
     }

@@ -3,14 +3,15 @@
 #include "Investigation.hpp"
 
 Investigation::Investigation() {
-  bufferInfo.minSize = 0.5 * L1;
+  const SizeOfCaches myCache;
+  bufferInfo.minSize = 0.5 * myCache.l1;
   bufferInfo.currentSize = bufferInfo.minSize;
-  bufferInfo.maxSize = 1.5 * L3;
+  bufferInfo.maxSize = 1.5 * myCache.l3;
 }
 Investigation::Investigation(const size_t &min, const size_t &max) {
-  bufferInfo.minSize = 0.5 * min * BYTES_IN_KILOBYTES;
+  bufferInfo.minSize = 0.5 * min * bytesInKilobytes;
   bufferInfo.currentSize = bufferInfo.minSize;
-  bufferInfo.maxSize = 1.5 * max * BYTES_IN_KILOBYTES;
+  bufferInfo.maxSize = 1.5 * max * bytesInKilobytes;
 }
 void Investigation::Start() {
   size_t numberOfElements = bufferInfo.minSize / sizeof(int);
