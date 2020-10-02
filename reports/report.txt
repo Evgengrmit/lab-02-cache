@@ -6,49 +6,49 @@ investigation:
 		input data:
 			buffer size: "192 kB"
 		results:
-			duration: "534 ms"
+			duration: "518 ms"
 	- experiment:
 		number: 2
 		input data:
 			buffer size: "256 kB"
 		results:
-			duration: "646 ms"
+			duration: "698 ms"
 	- experiment:
 		number: 3
 		input data:
 			buffer size: "512 kB"
 		results:
-			duration: "1293 ms"
+			duration: "1392 ms"
 	- experiment:
 		number: 4
 		input data:
 			buffer size: "1024 kB"
 		results:
-			duration: "2589 ms"
+			duration: "2688 ms"
 	- experiment:
 		number: 5
 		input data:
 			buffer size: "2048 kB"
 		results:
-			duration: "5339 ms"
+			duration: "6141 ms"
 	- experiment:
 		number: 6
 		input data:
 			buffer size: "4096 kB"
 		results:
-			duration: "10920 ms"
+			duration: "12240 ms"
 	- experiment:
 		number: 7
 		input data:
 			buffer size: "8192 kB"
 		results:
-			duration: "21224 ms"
+			duration: "21877 ms"
 	- experiment:
 		number: 8
 		input data:
 			buffer size: "13824 kB"
 		results:
-			duration: "35740 ms"
+			duration: "40559 ms"
 
 investigation:
 	travel_variant: Reverse
@@ -58,49 +58,49 @@ investigation:
 		input data:
 			buffer size: "192 kB"
 		results:
-			duration: "503 ms"
+			duration: "662 ms"
 	- experiment:
 		number: 2
 		input data:
 			buffer size: "256 kB"
 		results:
-			duration: "669 ms"
+			duration: "701 ms"
 	- experiment:
 		number: 3
 		input data:
 			buffer size: "512 kB"
 		results:
-			duration: "1358 ms"
+			duration: "1380 ms"
 	- experiment:
 		number: 4
 		input data:
 			buffer size: "1024 kB"
 		results:
-			duration: "2728 ms"
+			duration: "2745 ms"
 	- experiment:
 		number: 5
 		input data:
 			buffer size: "2048 kB"
 		results:
-			duration: "5474 ms"
+			duration: "6792 ms"
 	- experiment:
 		number: 6
 		input data:
 			buffer size: "4096 kB"
 		results:
-			duration: "11067 ms"
+			duration: "11837 ms"
 	- experiment:
 		number: 7
 		input data:
 			buffer size: "8192 kB"
 		results:
-			duration: "22641 ms"
+			duration: "22457 ms"
 	- experiment:
 		number: 8
 		input data:
 			buffer size: "13824 kB"
 		results:
-			duration: "36981 ms"
+			duration: "38359 ms"
 
 investigation:
 	travel_variant: Random
@@ -110,47 +110,47 @@ investigation:
 		input data:
 			buffer size: "192 kB"
 		results:
-			duration: "570 ms"
+			duration: "563 ms"
 	- experiment:
 		number: 2
 		input data:
 			buffer size: "256 kB"
 		results:
-			duration: "754 ms"
+			duration: "824 ms"
 	- experiment:
 		number: 3
 		input data:
 			buffer size: "512 kB"
 		results:
-			duration: "1736 ms"
+			duration: "1860 ms"
 	- experiment:
 		number: 4
 		input data:
 			buffer size: "1024 kB"
 		results:
-			duration: "3796 ms"
+			duration: "4093 ms"
 	- experiment:
 		number: 5
 		input data:
 			buffer size: "2048 kB"
 		results:
-			duration: "8479 ms"
+			duration: "11048 ms"
 	- experiment:
 		number: 6
 		input data:
 			buffer size: "4096 kB"
 		results:
-			duration: "16430 ms"
+			duration: "24198 ms"
 	- experiment:
 		number: 7
 		input data:
 			buffer size: "8192 kB"
 		results:
-			duration: "48807 ms"
+			duration: "73370 ms"
 	- experiment:
 		number: 8
 		input data:
 			buffer size: "13824 kB"
 		results:
-			duration: "154423 ms"
+			duration: "188731 ms"
 

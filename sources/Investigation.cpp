@@ -8,11 +8,7 @@ Investigation::Investigation() {
   bufferInfo.currentSize = bufferInfo.minSize;
   bufferInfo.maxSize = 1.5 * myCache.l3;
 }
-Investigation::Investigation(const size_t &min, const size_t &max) {
-  bufferInfo.minSize = 0.5 * min * bytesInKilobytes;
-  bufferInfo.currentSize = bufferInfo.minSize;
-  bufferInfo.maxSize = 1.5 * max * bytesInKilobytes;
-}
+
 void Investigation::Start() {
   size_t numberOfElements = bufferInfo.minSize / sizeof(int);
   size_t degree = std::log2(bufferInfo.minSize);
@@ -74,6 +70,7 @@ void Investigation::MakeReport(std::ofstream &file) {
   }
   file << "\n";
 }
+
 Investigation::~Investigation() {
   for (auto element : results) {
     delete element;

@@ -9,14 +9,14 @@
 #include <vector>
 
 
-const size_t bytesInKilobytes = 1024;
+const size_t kBytesInKilobytes = 1024;
 // Intel Core i7-9750H
 // in bytes
 struct SizeOfCaches{
  public:
-  const size_t l1 = 384 * bytesInKilobytes;
-  const size_t l2 = 1536 * bytesInKilobytes;
-  const size_t l3 = 9216 * bytesInKilobytes;
+  const size_t l1 = 384 * kBytesInKilobytes;
+  const size_t l2 = 1536 * kBytesInKilobytes;
+  const size_t l3 = 9216 * kBytesInKilobytes;
 };
 
 struct BufferSize {
@@ -28,7 +28,6 @@ struct BufferSize {
 class Investigation {
  public:
   Investigation();
-  Investigation(const size_t &min, const size_t &max);
   void Start();
   void MakeReport(std::ofstream &file);
   virtual ~Investigation();

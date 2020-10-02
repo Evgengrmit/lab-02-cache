@@ -28,13 +28,14 @@ class Experiment {
   ~Experiment();
 
  private:
-  ExperimentsTimes time{};
+  ExperimentsTimes time;
   int *buffer;
   size_t cardinality;
   std::vector<size_t> indexesForWarming;
   std::vector<size_t> indexesForBuffer;
   int doSomething(int value);
   void warmingUpCache();
+  auto loopingByArray();
   void directBypass();
   void reverseBypass();
   void randomBypass();
