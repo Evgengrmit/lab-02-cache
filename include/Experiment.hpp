@@ -11,7 +11,7 @@
 #include <utility>
 #include <vector>
 
-const size_t cycles = 1000;
+const size_t kcycles = 1000;
 
 struct ExperimentsTimes {
   double straightDuration;

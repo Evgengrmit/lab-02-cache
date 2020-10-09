@@ -42,7 +42,7 @@ void Experiment::warmingUpCache() {
 
 auto Experiment::loopingByArray() {
   auto start = std::chrono::high_resolution_clock::now();
-  for (size_t i = 0; i < cycles; ++i) {
+  for (size_t i = 0; i < kcycles; ++i) {
     for (const size_t &j : indexesForBuffer) {
       doSomething(buffer[j]);
     }
